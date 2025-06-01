@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en"> 	
+<head> 
+
+	<meta charset="utf-8"> 
+	<meta name="author" content="Teresa Yang">
+	<meta name="keywords" content="Pamela's Diner">
+	<meta name="description" content="Pamela's Diner Website">
+
+	<title>Pamela's Diner</title>
+	<!-- css-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css">
+	<!--js-->
+	<script src="js/jquery-3.6.0.min.js" type="text/javascript">  </script>
+	<script src="js/jquery.lightbox.min.js" type="text/javascript">  </script>
+	<script type="text/Javascript">
+		$(function() {
+			$('#menu-gallery a').lightBox();
+		});
+	</script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script>
+		$(function() {
+			$("#accordion").accordion();
+		});
+	</script>
+	<script src="js/scripts.js" type="text/javascript"> </script>
+
+
+</head>
+<body>
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<h1><img src="images/PamelaLogosmall.png" alt="Pamela's Logo">
+					PAMELA'S DINER</h1>
+			</header>
+	
+			<nav> <!-- navigation items -->
+				<a href="index.html">HOME</a>
+				<a href="menu.html" class="selected">MENU</a>
+				<a href="hours.html">HOURS & LOCATION</a>
+				<a href="everyone.html">WHAT'S EVERYONE SAYING</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="https://www.toasttab.com/pamela-s-diner-strip-district-60-21st-street/v3">ORDER ONLINE</a>
+			</nav>
+		</div> 
+	</div>
+
+	<div id="content">
+		<h3>Menu</h3> <!--show menu through an accordion-->
+		<button onclick="window.open('pamelasmenu.pdf');">Open PDF Here </button>
+		<script>
+			$( "button" ).button();
+		</script>		
+		<div id="menu">
+			<div id ="accordion">
+				<h4>Egg Combos</h4>
+				<ul>
+					<li>Meat and Eggs: 2 eggs any style with your choice of double 
+						smoked, thick-slice bacon, hand-carved ham, sausage links or 
+						turkey sausage patties</li>
+					<li>Kielbasa Eggs: 2 eggs any style with grilled kielbasa</li>
+					<li>2 Eggs: Any style</li>
+				</ul>
+				<h4>Fan Favorites</h4>
+				<ul>
+					<li>Tex-Mex Omelet: Chorizo sausage, cheddar cheese and salsa, 
+						topped with guacamole and sour cream, served with Lyonniase 
+						potatoes and toast</li>
+					<li>Gail's Favorite Eggs: Lightly scrambled, topped with cream 
+						cheese & scallions, served with Lyonnaise potatoes & toast</li>
+				</ul>
+				<h4>Hotcakes, French Toast and Waffles</h4>
+				<ul>
+					<li>Pamela's Famous Crepe-Style Hotcakes: Choice of meat - 
+						double smoked, thick- sliced bacon,
+						hand-carved ham, sausage links or turkey sausage patties</li>
+					<li>Crepe-Style Short Stack Hotcakes: Choice of meat - 
+						double smoked, thick- sliced bacon, hand-carved ham, 
+						sausage links or turkey sausage patties</li>
+					<li>French Toast: Choice of meat - 
+						double smoked, thick- sliced bacon, hand-carved ham, 
+						sausage links or turkey sausage patties</li>
+					<li>California French Toast: Home-style whole wheat raisin bread 
+						dunked in cinnamon-vanilla egg batter. Topped with walnuts, 
+						chocolate chips, bananas, strawberries or blueberries extra</li>
+					<li>Croissant French Toast: Croissants soaked in cinnamon-vanilla 
+						egg batter and topped with caramel sauce and walnuts</li>
+					<li>Belgian Waffle: With walnuts, chocolate chips, bananas, 
+						strawberries or blueberries extra</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<h4>Gallery</h4> <!--pictures of the food at Pam's-->
+		<p>Click on the images to see more!</p>
+		<div id="menu-gallery">
+			<div id="hotcakethumbnail"><div id="hotcakes">
+			<a href="images/hotcakes.jpg"  title="Pamela's best-selling hotcakes!">
+			<img src="images/hotcakesthumb.jpg" alt="hotcakes"/></a></div></div>
+			<div id="omeletthumbnail"><div id="omelet">
+			<a href="images/omelet.jpg"  title="Omelet for breakfast!">
+			<img src="images/omeletthumb.jpg" alt="omelet"/></a></div></div>
+			<div id="frenchtoastthumbnail"><div id="frenchtoast">
+			<a href="images/frenchtoast.jpg"  title="A french toast kind of day.">
+			<img src="images/frenchtoastthumb.jpg" alt="french toast"/></a></div></div>
+			<div id="wafflesthumbnail"><div id="waffles">
+				<a href="images/waffles.jpg"  title="Waffles. Yum!">
+				<img src="images/wafflesthumb.jpg" alt="waffles"/></a></div></div>	
+		</div>
+	</div>
+	<div id="social-media">
+		<a href="mailto:pam@pamelasdiner.com"><img src="images/email.png" alt="Email Icon"></a>
+		<a href = "https://www.youtube.com/watch?v=Rb0Dw2t-nTE" target = "_blank"><img src="images/youtube.png" alt="Youtube Logo"></a>
+		<a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"></a>
+		<a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Logo"></a>
+	</div>
+	<footer>
+		&copy; 2022 Pamela's Diner<br>
+	</footer>
+</body>
+</html>
